@@ -3,11 +3,11 @@
 
 osef = False
 while not osef:
-    nb = str(input("Binaire a convertir: "))
+    nb = str(input("Binary to convert: "))
     for i in range(0,len(nb)):
         if nb[i] != "0" and nb[i] != "1":
             osef = False
-            print("Ne pas utiliser de chiffre autre que 0 ou 1.")
+            print("Don't use other numbers that 0 or 1.")
             break
         else:
             osef = True

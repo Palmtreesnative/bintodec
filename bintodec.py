@@ -4,13 +4,10 @@
 osef = False
 while not osef:
     nb = str(input("Binary to convert: "))
-    for i in range(0,len(nb)):
-        if nb[i] != "0" and nb[i] != "1":
-            osef = False
-            print("Don't use other numbers that 0 or 1.")
-            break
-        else:
-            osef = True
+    if nb.count("1") + nb.count("0") != len(nb):
+        print("Don't use other numbre that 0 or 1.")
+    else:
+        osef = True
 
 a = 0
 b = 1
